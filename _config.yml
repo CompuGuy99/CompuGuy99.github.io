@@ -35,26 +35,26 @@ hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg.
 
 # Experiences
 author_work_experiences:
-            - company_name: Google
-              company_logo: google.png
-              company_url: https://google.com
-              designation: Software Engineer
-              description: Worked on various Google Products
+            - company_name: The University of Utah, Kahlert School of Computing
+              company_logo: Ulogo.png
+              company_url: https://utah.edu
+              designation: Teaching Assistant
+              description: Assist Professors in delivering content to students
               visibility: true
-            - company_name: Microsoft
-              company_logo: microsoft.png
-              company_url: https://microsoft.com
+            - company_name: CKR Engineers
+              company_logo: ckr.png
+              company_url: https://ckrengineers.com
               designation: Azure Developer
               description: Worked on various Azure Cloud Products
               visibility: true
 
 # Education
 author_education_details:
-              - college_logo: mit.png
-                college_name: MIT
-                college_url: https://mit.org
-                college_degree: CS Engineer
-                description: Bachelor of Technology
+              - college_logo: Ulogo.png
+                college_name: The University of Utah
+                college_url: https://utah.edu
+                college_degree: Computer Engineering
+                description: Bachelor of Computer Engineering, Emphasis on Embedded Development
                 visibility: true
 
 # Projects
@@ -71,8 +71,8 @@ author_project_details:
                 visibility: true
 
 # social links
-twitter_username: johndoe
-github_username:  sujaykundu777
+twitter_username: compuguy99
+github_username:  CompuGuy99
 facebook_username: johndoe
 linkedin_username: johndoe
 behance_username: johndoe
