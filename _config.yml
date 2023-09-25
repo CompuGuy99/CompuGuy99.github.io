@@ -29,7 +29,7 @@ author: Alex Guymon
 author_bio: Hi, my name is Alex Guymon. I built this site using devlopr-jekyll :D
 author_email: "alex.guymon@compuguy.dev"
 author_location: United States
-typewrite-text: I am a recently graduated Computer Engineer with experience in teaching Object-Oriented Programming and Embedded Software development.
+typewrite-text: I am a graduating Computer Engineer with experience in teaching Object-Oriented Programming and Embedded Software development.
 hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
 
 # Experiences
