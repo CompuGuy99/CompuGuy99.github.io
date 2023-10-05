@@ -14,7 +14,7 @@ REMOTE_REPO="https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSIT
 
 # We need to clone the repo here.
 # Remember, our Docker container is practically pristine at this point
-echo $REMOTE_REPO
+echo "${GITHUB_ACTOR}"
 
 git clone $REMOTE_REPO repo
 cd repo
