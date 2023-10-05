@@ -58,7 +58,7 @@ author_education_details:
 
 # Projects
 author_project_details:
-              - project_thumbnail: gamershub.png
+              - project_thumbnail: SCMB-01.jpg
                 project_title: SCMB-01 Processor
                 project_description: 3D Breakout Processor Demonstration to drive understanding of Processor Items
                 project_url: https://schmorbonium.github.io/project-website
