@@ -9,7 +9,7 @@ name: "Jekyll CI"
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ master ]
+    
   pull_request:
     # The branches below must be a subset of the branches above
     branches: [ master ]
@@ -21,19 +21,21 @@ on:
 
 jobs:
   # Check the Jekyll itself for errors and syntax
-  # build:
-  #   name: Jekyll Build
-  #   # The type of runner that the job will run on
-  #   runs-on: ubuntu-latest
-  #   # Check that the Jekyll can actually build
-  #   steps:
-  #     - name: Checkout repository
-  #       uses: actions/checkout@v3
-  #     - name: Build the site in the jekyll/builder container
-  #       run: |
-  #         docker run \
-  #         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-  #         jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future --trace"
+  build:
+    name: Jekyll Build
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    # Check that the Jekyll can actually build
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Setup Build
+        uses: actions/configure-pages@v3
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
 
   # Then check the markdown files are properly formatted
   analyse:
