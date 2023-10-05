@@ -48,8 +48,9 @@ jobs:
 
     - name: Deploy Jekyll Site
       uses: ./.github/workflows/deploy_v2
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
         GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
 
