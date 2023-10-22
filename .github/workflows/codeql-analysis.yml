@@ -39,16 +39,6 @@ jobs:
         with:
           source: ./
           destination: ./_site   
-      - name: ntfy-failed-notifications
-        uses: niniyas/ntfy-action@master
-        if: failure()
-        with:
-          url: 'https://notifications.compuguy.dev'
-          topic: 'github'
-          priority: 5
-          headers: '{"authorization": "Basic 123456", "another-one": "Basic 123456"}'
-          tags: +1,partying_face,action,failed
-          details: Workflow has failed!
 
   # Then check the markdown files are properly formatted
   analyse:
@@ -69,4 +59,20 @@ jobs:
           ignore: _site/
           # Try to fix basic errors
           fix: true
+
+  notify:
+    name: Report Status
+    runs-on: ubuntu-latest
+    needs: [build, analyse]
+    steps:
+      - name: Failure Notification
+        uses: niniyas/ntfy-action@master
+        if: failure()
+        with:
+          url: 'https://notifications.compuguy.dev'
+          topic: 'github'
+          priority: 5
+          headers: '{"authorization": "Basic 123456", "another-one": "Basic 123456"}'
+          tags: +1,partying_face,action,failed
+          details: Jekyll cannot build your site!
 
