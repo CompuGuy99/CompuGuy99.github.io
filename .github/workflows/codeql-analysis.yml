@@ -58,3 +58,14 @@ jobs:
           ignore: _site/
           # Try to fix basic errors
           fix: true
+  
+  notify:    
+    name: ntfy-failed-notifications
+    uses: niniyas/ntfy-action@master
+    if: failure()
+    with:
+      url: 'https://notifications.compuguy.dev'
+      topic: 'github'
+      priority: 5
+      tags: +1,partying_face,action,failed
+      details: Workflow has failed!
