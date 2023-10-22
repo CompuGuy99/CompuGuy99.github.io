@@ -49,3 +49,17 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+  
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Report Online
+      uses: niniyas/ntfy-action@master
+      if: success()
+      with:
+        url: 'https://notifications.compuguy.dev'
+        topic: 'github'
+        priority: 5
+        headers: '{"authorization": "Basic 123456", "another-one": "Basic 123456"}'
+        tags: +1,partying_face,action,failed
+        details: Latest revision is now online
