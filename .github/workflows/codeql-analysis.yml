@@ -12,6 +12,7 @@ on:
     branches:
       - 'master'
       - 'action_testing'
+      - 'ntfy_action'
   pull_request:
     # The branches below must be a subset of the branches above
     branches: [ master ]
