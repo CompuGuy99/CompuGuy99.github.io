@@ -18,8 +18,6 @@ urls:
       url: /gallery
     - text: Schmorbonium
       url : https://schmorbonium.github.io/project-website
-    - text: Contact
-      url : /contact
 
 
 # Edit Author details (For multi authors check _data/authors.yml)
