@@ -18,4 +18,25 @@ jobs:
           and get back to you.
         pr-message: >-
           Thanks for submitting a PR. If the PR is a valid and passes
-          all the checks , we will approve it soon. Have a great day !
+          all the checks , we will approve it soon. Have a great day!
+
+  notify:
+    name: Notify
+    runs-on: ubuntu-latest
+    steps:
+    - name: Issue notification
+      uses: niniyas/ntfy-action@master
+      if: github.event_name == 'issues'
+      with:
+        url: 'https://notifications.compuguy.dev'
+        topic: 'github'
+        tags: issue
+        details: An issue has been submitted by $GITHUB_ACTOR. Please act soon.
+    - name: Pull request notification
+      uses: niniyas/ntfy-action@master
+      if: github.event_name == 'pull_request'
+      with:
+        url: 'https://notifications.compuguy.dev'
+        topic: 'github'
+        tags: issue
+        details: An issue has been submitted by $GITHUB_ACTOR. Please act soon.
