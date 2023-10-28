@@ -47,3 +47,16 @@ xplor4r:
       - title: "facebook"
         url: "https://www.facebook.com/sujay.kundu2"
 
+compuguy99:
+    name: Alex Guymon
+    username: CompuGuy99
+    site: https://compuguy.dev
+    avatar: compuguy99.jpg
+    bio: Embedded Software, Object-Oriented Programming
+    email: alex@compuguy.dev
+    social:
+      - title: "github"
+        url: "https://github.com/CompuGuy99"
+      - title: "linkedin"
+        url: "https://www.linkedin.com/in/alex-compuguy"
+

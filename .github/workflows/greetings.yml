@@ -31,7 +31,7 @@ jobs:
         url: 'https://notifications.compuguy.dev'
         topic: 'github'
         tags: issue
-        details: An issue has been submitted by $GITHUB_ACTOR. Please act soon.
+        details: An issue has been submitted by ${{ github.actor }}. Please act soon.
     - name: Pull request notification
       uses: niniyas/ntfy-action@master
       if: github.event_name == 'pull_request'
@@ -39,4 +39,4 @@ jobs:
         url: 'https://notifications.compuguy.dev'
         topic: 'github'
         tags: issue
-        details: An issue has been submitted by $GITHUB_ACTOR. Please act soon.
+        details: A pull request has been submitted by ${{ github.actor }}. Please act soon.
