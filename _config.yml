@@ -32,6 +32,12 @@ hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg.
 
 # Experiences
 author_work_experiences:
+            - company_name: Epic Systems Corporation
+              company_logo: epic.png
+              company_url: https://www.epic.com
+              designation: Infrastructure Engineer
+              description: Active Directory Integration, Virtual Machine Management, and Automated deployments for Hosted at Epic customers.
+              visibility: true
             - company_name: The University of Utah, Kahlert School of Computing
               company_logo: Ulogo.png
               company_url: https://utah.edu
