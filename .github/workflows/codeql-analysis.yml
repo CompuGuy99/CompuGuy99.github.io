@@ -73,5 +73,5 @@ jobs:
           topic: 'github'
           priority: 3
           tags: +1,partying_face,action,failed
-          details: Jekyll cannot build your site!
+          details: Jekyll cannot build your site! Review the logs and fix immediately!
 
