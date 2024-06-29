@@ -6,6 +6,7 @@ date: '2024-07-01 09:00 -0500'
 category:
         - code
         - employment
+        - rant
 summary: Sure PowerShell is a microsoft thing. Does htat mean it's bad?
 thumbnail: /assets/img/posts/powershell.jpg
 ---
